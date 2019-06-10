@@ -17,14 +17,24 @@ class Artist
   end 
   
   def songs 
+<<<<<<< HEAD
     Song.all.select do |song|
       song.artist == self
+=======
+    Song.all.select do |songs|
+      songs.artist == self
+>>>>>>> 007f5a325933ed753b96ff91bdf0dc002c7dff78
     end 
   end 
   
   def genres
+<<<<<<< HEAD
     songs.map do |song|
       song.genre
+=======
+    Genre.all.select do |genres|
+      genres.artists == self 
+>>>>>>> 007f5a325933ed753b96ff91bdf0dc002c7dff78
     end 
   end 
   
